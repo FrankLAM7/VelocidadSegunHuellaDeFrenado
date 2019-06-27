@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Velocidad-AccidentesTransito</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--JQUERY-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.css">
+
+	<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+	<!--JQWidgets-->
+	<link rel="stylesheet" type="text/css" href="jqwidgets/jqwidgets/styles/jqx.base.css">
+	<script type="text/javascript" src="jqwidgets/scripts/demos.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxcore.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxdata.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxdraw.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxgauge.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxbuttons.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxcheckbox.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxradiobutton.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxexpander.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxmenu.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxscrollbar.js"></script>
+    <script type="text/javascript" src="jqwidgets/jqwidgets/jqxlistbox.js"></script>
+
+
+	<!--<script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>-->
+	<!--mis JS-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="shortcut icon" type="image/ico" href="img/configuration_system_car_22272.ico"/>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<div id="opciones">
+			<nav id="menu">
+				<div id='jqxWidget' style='width: 250px;'>
+            <div id='jqxMenu' style="visibility: hidden;">
+                <ul>
+                    <li><a href="calxhuellafrenado.html#">Home</a></li>
+                    <li>Velocidad
+                        <ul>
+                            <li><a href="#">Por Huella de Frenado</a>
+                                <ul>
+                                    <li><a href="calxhuellafrenado.html#">Mismo Pavimento</a></li>
+                                    <li><a href="#">Diferentes Pavimentos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li>Services
+                        <ul>
+                            <li><a href="#">Product Development</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Shop Online</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Training &amp; Consulting</a></li>
+                        </ul>
+                    </li>
+                    <li>Products
+                        <ul>
+                            <li><a href="#">New</a>
+                                <ul>
+                                    <li><a href="#">Corporate Use</a></li>
+                                    <li><a href="#">Private Use</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Used</a>
+                                <ul>
+                                    <li><a href="#">Corporate Use</a></li>
+                                    <li><a href="#">Private Use</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Featured</a></li>
+                            <li><a href="#">Top Rated</a></li>
+                            <li><a href="#">Prices</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a>
+                        <ul>
+                            <li><a href="#">Enquiry Form</a></li>
+                            <li><a href="#">Map &amp; Driving Directions</a></li>
+                            <li><a href="#">Your Feedback</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+			</nav>
+	</div>
+
+	<section id="global">
+		<h3><span>Calcular Velocidad por Huella de Frenado</span></h3>
+		<h4><span style="text-decoration : underline">Mismo Pavimento</span></h4>
+		<div id="datos1">
+
+					<h4><span>Ingresar Valores</span></h4>
+					<form action="#" id="datos">
+						Coeficiente de Fricción :
+						<input type="text" id="cf"/> <br/>
+						Longitud de la Huella  : 
+						<input type="text" id="lh" /> (m.cm)<br/>
+						<h4>Superficie con Gradiente/Pendiente</h4>
+						<div id="listbox"></div>
+
+						<div id='jqxWidget' style='font-family: Verdana Arial; font-size: 12px; width: 400px;'>
+
+					        
+					            
+					        <div style='margin-top: 10px;' id='rbSubida'>
+					            Gradiente
+					            
+					        </div>
+					        <input type="text" id="sub" class="alderecha" /> <br/>
+					        <div style='margin-top: 10px;' id='rbBajada'>
+					            <span>Pendiente</span>
+					             
+					        </div>
+					        <input type="text" id="baj" class="alderecha"/> <br/>
+					           
+					        </div>
+					         <div>
+					    	<button type="submit" id="calcular">Calcular</button>
+					    	</div>
+					    </div>
+					   
+						
+					</form>
+				</div>
+		<div id="respuesta">
+			<h2><span id="vel_ms"></span></h2>
+			<h2><span id="vel_kmh"></span></h2>
+			<h2><span id="dtr"></span></h2>
+			<div id="demoWidget" style="position: relative;">
+	    <div style="float: left;" id="gaugeContainer"></div>
+        <div id="gaugeValue" style="position: absolute; top: 235px; left: 132px; font-family: Sans-Serif; text-align: center; font-size: 17px; width: 70px;"></div>
+        <div style="margin-left: 60px; float: left;" id="linearGauge"></div>
+    	</div>
+		</div>
+		 
+	</section>
+
+	<footer>
+		Frank Andia Monroy<br/>
+		Desarrollo Web<br/>
+		frankzick1@gmail.com
+		<a href="#" class="subir">Telf: 982739106</a>
+	</footer>
+
+</body>
+</html>

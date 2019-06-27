@@ -1,0 +1,21 @@
+/* SITEMA QUE CALCULA LA VELOCIDAD SEGUN LA HUELLA 
+DE FRENADO */ 
+
+<!-- V  1.0.0 -->
+
+INDICACIONES
+=====================================================
+
+CREAR ACCESO DIRECTO EN EL ESCRITORIO
+
+-En la carpeta del proyecto
+-Click derecho en el archivo "Huella de Frenado"
+-Seleccionar "Enviar a" 
+-Seleccionar "Escritorio"
+
+======================================================
+
+A TENER EN CUENTA
+
+El sistema no necesita conexión a internet.
+Se ejecuta localmente.
